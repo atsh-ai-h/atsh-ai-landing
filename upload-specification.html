@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>إرسال مواصفات مشروعك | ATSH AI</title>
+  <meta name="description" content="أرسل ملف مواصفات مشروعك بصيغة PDF إلى فريق ATSH AI.">
+  <link rel="stylesheet" href="/upload-specification.css">
+  <script src="/upload-specification.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="brand"><a href="/" aria-label="ATSH AI - الصفحة الرئيسية">ATSH <span>AI</span></a></header>
+    <section class="upload-card" aria-labelledby="page-title">
+      <div class="eyebrow">ATSH AI · PROJECT INTAKE</div>
+      <h1 id="page-title">خلّينا نفهم مشروعك</h1>
+      <p class="intro">ارفع ملف مواصفات المشروع بصيغة PDF، وفريقنا هيبدأ مراجعة المتطلبات وتجهيز الخطوة التالية.</p>
+      <form id="upload-form">
+        <label class="drop-zone" id="drop-zone" for="pdf-file">
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <strong id="file-prompt">اسحب ملف PDF هنا أو اضغط للاختيار</strong>
+          <span class="hint">PDF فقط · الحد الأقصى 50 ميجابايت</span>
+          <input id="pdf-file" name="data" type="file" accept="application/pdf,.pdf" required>
+        </label>
+        <div class="file-details" id="file-details" hidden></div>
+        <button id="submit-button" type="submit" disabled>إرسال ملف المواصفات</button>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+      </form>
+      <p class="privacy-note">يُستخدم الملف لفهم متطلبات مشروعك والتواصل بشأن تنفيذه.</p>
+    </section>
+    <footer>© ATSH AI</footer>
+  </main>
+</body>
+</html>
