@@ -1,0 +1,26 @@
+:root{color-scheme:dark;--bg:#090b12;--panel:#111622;--line:#293247;--muted:#aab3c5;--text:#f7f8fc;--accent:#8b7cff;--accent2:#54d6c8;--danger:#ff7777}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#1a2140 0%,var(--bg) 58%);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+.page-shell{width:min(100% - 32px,760px);min-height:100vh;margin:auto;display:flex;flex-direction:column;align-items:center}
+.brand{width:100%;padding:34px 0}
+.brand a{color:#fff;text-decoration:none;font-size:25px;font-weight:800;letter-spacing:1px}
+.brand span{color:var(--accent2)}
+.upload-card{width:100%;margin:auto 0;padding:clamp(26px,6vw,54px);border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(22,29,45,.97),rgba(13,17,27,.97));box-shadow:0 24px 80px #0007}
+.eyebrow{color:var(--accent2);font-size:12px;font-weight:700;letter-spacing:2px}
+h1{font-size:clamp(29px,5vw,43px);margin:17px 0 12px}
+.intro{color:var(--muted);line-height:1.9;margin:0 0 30px}
+.drop-zone{min-height:220px;border:1.5px dashed #596584;border-radius:17px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:13px;padding:24px;text-align:center;cursor:pointer;background:#0c111d;transition:border-color .2s,background .2s}
+.drop-zone:hover,.drop-zone.dragging{border-color:var(--accent2);background:#111d29}
+.upload-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#262345;color:#c9c2ff;font-size:30px}
+.drop-zone strong{font-size:16px}
+.hint,.privacy-note{font-size:12px;color:var(--muted)}
+input[type=file]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.file-details{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;color:#dce4f4;font-size:13px;overflow-wrap:anywhere}
+button{width:100%;margin-top:20px;padding:16px;border:0;border-radius:12px;background:linear-gradient(100deg,#7768ef,#4b9eae);color:#fff;font:700 15px Tahoma,Arial,sans-serif;cursor:pointer}
+button:disabled{opacity:.42;cursor:not-allowed}
+button:not(:disabled):hover{filter:brightness(1.12)}
+.status{min-height:25px;margin-top:14px;font-size:13px;line-height:1.7;color:var(--muted)}
+.status.error{color:var(--danger)}.status.success{color:var(--accent2)}
+.privacy-note{margin:12px 0 0;text-align:center}
+footer{padding:25px;color:#778198;font-size:12px}
+@media(max-width:520px){.brand{padding:24px 0}.upload-card{border-radius:18px}.drop-zone{min-height:190px}}
